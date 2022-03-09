@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Swiper</title>
+   <!-- Latest compiled and minified CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="./slide1/img1.jpeg" class="bg-img" />
+
+                <div
+                    class="carousel-card"
+                >
+                    <img src="./slide1/icon1.png" />
+                    <h1>
+                        Discover more with biotech/life sciences
+                    </h1>
+                    <p>
+                        As a proud partner of the California Life Sciences (CLS) and Biocom we get you to scientific discovery even faster.
+                    </p>
+                    <button
+                        class="read_more_btn"
+                    >
+                        READ MORE
+                    </button>
+                </div>
+
+            </div>
+                        <div class="swiper-slide">
+                <img src="./slide2/img.jpeg" class="bg-img" />
+
+                <div
+                    class="carousel-card"
+                >
+                    <img src="./slide2/icon.png" />
+                    <h1>
+Protect your organization
+                    </h1>
+                    <p>
+Shift your Cyber security posture from reactive responses to a proactive model with cuting edge Securonix SIEM (Security Incidentand Event Management) technology to give ful visibility into your entire IT environment as wel as vulnerability management before breaches occur.                    </p>
+                    <button
+                        class="read_more_btn"
+                    >
+                        READ MORE
+                    </button>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <img src="./slide3/img.jpeg" class="bg-img" />
+
+                <div
+                    class="carousel-card"
+                >
+                    <img src="./slide3/icon.png" />
+                    <h1>
+                        Scale for growth with cloud
+                    </h1>
+                    <p>
+                        The digital transformation to cloud is underway across all industries, and we can get you ready, and help strategize on migrating your IT infrastructure to the cloud — private, public, or hybrid. 
+                        </p>                   
+                    <button
+                        class="read_more_btn"
+                    >
+                        READ MORE
+                    </button>
+                </div>
+            </div>
+                        <div class="swiper-slide">
+                <img src="./slide4/img.jpeg" class="bg-img" />
+
+                <div
+                    class="carousel-card"
+                >
+                    <img src="./slide4/icon.png" />
+                    <h1>
+                        Make your enterprise more competitive
+                    </h1>
+                    <p>
+                        We can build and maintain your entire IT infrastructure so you can focus on growing your busines, increasing revenue,   reducing  costs, and keeping customers happy.                    
+                    <button
+                        class="read_more_btn"
+                    >
+                        READ MORE
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+
+    <script type="module">
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 3,
+            centeredSlides: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            centeredSlidesBounds: true,
+        });
+    </script>
+
+</body>
+</html>

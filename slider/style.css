@@ -1,0 +1,78 @@
+body{
+    background-color: #ddd;
+}
+
+.swiper {
+  height: 80vh;
+}
+
+.swiper-scrollbar {
+    display: none;
+}
+
+.swiper-slide{
+    /* width: 506.667px!important; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.swiper-slide .bg-img{
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.swiper-slide .carousel-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0px auto;
+    width: 70%;
+    margin-top: 170px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+      animation-delay: 2s;
+
+}
+
+.swiper-slide-next{
+    margin-left: 100px;
+}
+
+.swiper-slide-prev{
+    margin-right: 100px;
+
+    margin-left: -100px;
+}
+
+.carousel-card h1{
+    font-size: 1.2rem;
+    color: #04a3b1;
+}
+
+.carousel-card p{
+    font-size: 0.8rem;
+}
+
+.carousel-card .read_more_btn{
+    background-color: #ddaf13;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 70%;
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.swiper-slide-active .carousel-card{
+    opacity: 1;
+    /* transform: translateY(0%); */
+}
